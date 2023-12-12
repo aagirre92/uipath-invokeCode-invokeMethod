@@ -1,0 +1,352 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="invoke_method_invoke_code" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1111,2578" sap2010:WorkflowViewState.IdRef="invoke_method_invoke_code_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sl="clr-namespace:System.Linq;assembly=System.Linq" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.Cryptography</x:String>
+      <x:String>UiPath.Cryptography.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Cryptography.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Algorithms</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Encoding</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.OpenSsl</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Cng</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Csp</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="invoke_method_invoke_code" sap:VirtualizedContainerService.HintSize="603,2513" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:Int32)" Name="testList" />
+      <Variable x:TypeArguments="x:Int32" Name="result_int" />
+      <Variable x:TypeArguments="x:Boolean" Name="bResult" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence | Samples" sap:VirtualizedContainerService.HintSize="541,81" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="22" Name="number_str" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:List(x:Int32)">[testList]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:List(x:Int32)">[new List(Of Int32)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <uasc:AppendItemToCollection x:TypeArguments="x:Int32" Collection="[testList]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
+        <uasc:AppendItemToCollection.Items>
+          <scg:List x:TypeArguments="InArgument(x:Int32)" Capacity="8">
+            <InArgument x:TypeArguments="x:Int32">11</InArgument>
+            <InArgument x:TypeArguments="x:Int32">223</InArgument>
+            <InArgument x:TypeArguments="x:Int32">33</InArgument>
+            <InArgument x:TypeArguments="x:Int32">44</InArgument>
+            <InArgument x:TypeArguments="x:Int32">1</InArgument>
+          </scg:List>
+        </uasc:AppendItemToCollection.Items>
+      </uasc:AppendItemToCollection>
+      <InvokeMethod DisplayName="Invoke Method | Instance method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Reverse">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="scg:List(x:Int32)">[testList]</InArgument>
+        </InvokeMethod.TargetObject>
+      </InvokeMethod>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[String.Join(&quot;-&quot;,testList)]" />
+      <InvokeMethod DisplayName="Invoke Method | Static method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="TryParse" TargetType="x:Int32">
+        <InvokeMethod.Result>
+          <OutArgument x:TypeArguments="x:Boolean">[bResult]</OutArgument>
+        </InvokeMethod.Result>
+        <InArgument x:TypeArguments="x:String">[number_str]</InArgument>
+        <OutArgument x:TypeArguments="x:Int32">[result_int]</OutArgument>
+      </InvokeMethod>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[bResult.ToString+vbnewline+result_int.ToString]" />
+    </Sequence>
+    <Sequence DisplayName="Sequence | Data Tables" sap:VirtualizedContainerService.HintSize="541,81" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_1" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_2" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_3" />
+        <Variable x:TypeArguments="x:String" Name="dt_1_str" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BuildDataTable DataTable="[dt_1]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Age&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;Andoni&lt;/Name&gt;&#xA;    &lt;Age&gt;31&lt;/Age&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:BuildDataTable DataTable="[dt_2]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Age&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;John&lt;/Name&gt;&#xA;    &lt;Age&gt;45&lt;/Age&gt;&#xA;    &lt;Status&gt;Red Dead&lt;/Status&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <InvokeMethod DisplayName="Invoke Method | Instance" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Merge">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataTable">[dt_1]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="sd:DataTable">[dt_2]</InArgument>
+        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+        <InArgument x:TypeArguments="sd:MissingSchemaAction">[System.Data.MissingSchemaAction.Ignore]</InArgument>
+      </InvokeMethod>
+      <ui:OutputDataTable DataTable="[dt_1]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[dt_1_str]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[dt_1_str]" />
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="CHECK IF 2 FILES ARE THE SAME HASHING" DisplayName="Sequence | Invoke Code" sap:VirtualizedContainerService.HintSize="541,112" sap2010:WorkflowViewState.IdRef="Sequence_18">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="FirstFile" />
+        <Variable x:TypeArguments="x:String" Name="SecondFile" />
+        <Variable x:TypeArguments="x:Boolean" Name="bEqual" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="410,138" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[FirstFile]" />
+      <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="410,138" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[SecondFile]" />
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim files_list As New System.Collections.Generic.List(Of String)&#xA;Dim Encryptor As New System.Security.Cryptography.HMACSHA256&#xA;Dim Result As String&#xA;Dim Result_List As New System.Collections.Generic.List(Of String)&#xA;&#xA;Dim first_hash As String&#xA;Dim second_hash As String&#xA;&#xA;files_list.Add(FirstFile)&#xA;files_list.Add(SecondFile)&#xA;&#xA;For Each file In files_list&#xA;&#x9;Result=&quot;&quot;&#xA;&#x9;' Create a fileStream For the file.&#xA;&#x9;Dim fileStream As FileStream = System.IO.File.OpenRead(file)&#xA;&#x9;' Be sure it's positioned to the beginning of the stream.&#xA;&#x9;fileStream.Position = 0&#xA;&#x9;&#xA;&#x9;' Compute the hash code for the fileStream&#xA;&#x9;Dim bytesToHash() As Byte = Encryptor.ComputeHash(fileStream)&#xA;&#x9; &#xA;&#x9;' Close the fileStream&#xA;&#x9;fileStream.Close()&#xA;&#x9;&#xA;&#x9;' Convert the hash bytes to user-friendly text&#xA;&#x9;For Each item As Byte In bytesToHash&#xA;&#x9;&#x9;Result += item.ToString(&quot;x2&quot;)&#xA;&#x9;Next item&#xA;&#x9;' Result List&#xA;&#x9;Result_List.Add(Result)&#xA;&#x9;&#xA;&#x9;Console.WriteLine(Result)&#xA;&#xA;Next file&#xA;&#xA;' Determines whether all elements of a sequence satisfy a condition&#xA;' https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all?view=net-8.0&#xA;If Result_List.All(Function(x) x.Equals(Result_List(0))) Then&#xA;&#x9;Console.WriteLine(&quot;Same content&quot;)&#xA;&#x9;out_bEqual=True&#xA;Else&#xA;&#x9;Console.WriteLine(&quot;Distinct content&quot;)&#xA;&#x9;out_bEqual=False&#xA;End If&#xA;&#xA;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="410,165" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="FirstFile">[FirstFile]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SecondFile">[SecondFile]</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_bEqual">[bEqual]</OutArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <If Condition="[bEqual]" sap:VirtualizedContainerService.HintSize="410,528" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,173" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Same content!&quot;]" />
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,173" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;NOT Same content!&quot;]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Summing Two Lists using Add Range Activity&#xA;&#xA;&#xA;&#xA;In this exercise, you will use the Invoke Method activity to add the two Lists of Sales amount.&#xA;&#xA;List 1 = {1000,2000,3000,4000,5000}&#xA;&#xA;List 2 = {6000,7000,8000,9000}&#xA;&#xA;Your task is to add an Invoke Method activity, configure it to output the sum of total sales.&#xA;A few important things to look after&#xA;&#xA;We hope you’ve enjoyed this exercise and that you’ve found it useful! If you need more support with it, make use of the following resources:&#xA;&#xA;Invoke Method(opens in a new tab)&#xA;AddRange Method" DisplayName="Academy exercise 1 - Invoke Method" sap:VirtualizedContainerService.HintSize="541,1017" sap2010:WorkflowViewState.IdRef="Sequence_15">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:List(x:Int32)" Name="List_1" />
+        <Variable x:TypeArguments="scg:List(x:Int32)" Name="List_2" />
+        <Variable x:TypeArguments="x:String" Name="variable1" />
+        <Variable x:TypeArguments="x:Int32" Name="sum_elements" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="scg:List(x:Int32)">[List_1]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32) From {1000,2000,3000,4000,5000}]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="scg:List(x:Int32)">[List_2]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32) From {6000,7000,8000,9000}]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <InvokeMethod DisplayName="Invoke Method | Instance method" sap:VirtualizedContainerService.HintSize="479,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="AddRange">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="scg:List(x:Int32)">[List_1]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[List_2]</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Invoke Method | Static" sap:VirtualizedContainerService.HintSize="479,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="Sum" TargetType="sl:Enumerable">
+        <InvokeMethod.Result>
+          <OutArgument x:TypeArguments="x:Int32">[sum_elements]</OutArgument>
+        </InvokeMethod.Result>
+        <InArgument x:TypeArguments="scg:List(x:Int32)">[List_1]</InArgument>
+      </InvokeMethod>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="479,85" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Total sum of &quot; + String.Join(&quot;+&quot;,List_1) + &quot; is: &quot; + sum_elements.ToString]" />
+    </Sequence>
+    <Sequence DisplayName="Academy Exercise 2 - Invoke Code" sap:VirtualizedContainerService.HintSize="541,951" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:DateTime" Name="EventATime" />
+        <Variable x:TypeArguments="x:String" Name="EventATimezone" />
+        <Variable x:TypeArguments="s:DateTime" Name="EventBTime" />
+        <Variable x:TypeArguments="x:String" Name="EventBTimezone" />
+        <Variable x:TypeArguments="x:String" Name="EventsTimeDiff" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap2010:Annotation.AnnotationText="2020-02-07 08:20:00" DisplayName="Assign Event A Time" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[EventATime]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime">[New DateTime(2020, 2, 7, 8, 20, 0)]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <Assign DisplayName="Assign Event A Timezone" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[EventATimezone]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Central Europe Standard Time</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap2010:Annotation.AnnotationText="2020-02-07 12:45:00" DisplayName="Assign Event B Time" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[EventBTime]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime">[New DateTime(2020, 2, 7, 12, 45, 0)]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <Assign DisplayName="Assign Event B Timezone" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[EventBTimezone]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Eastern Standard Time</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="&#xA;' We can find out the list of supported Time Zone IDs from the Registry at&#xA;' HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones&#xA;' Or by using the TimeZoneInfo.GetSystemTimeZones() method.&#xA;&#xA;Dim TimeZoneInfoA As TimeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById(TimeZoneA)&#xA;Dim TimeZoneInfoB As TimeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById(TimeZoneB)&#xA;&#xA;' Convert the time of the Event A to the timezone of Event B&#xA;Dim EventATimeInTimezoneB As DateTime = TimeZoneInfo.ConvertTime(EventATime, TimeZoneInfoA, TimeZoneInfoB)&#xA;&#xA;' Compute the time difference between the two events&#xA;Dim timeDifference As TimeSpan = EventBTime - EventATimeInTimezoneB&#xA;&#xA;timeDiffString = timeDifference.ToString&#xA;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="s:DateTime" x:Key="EventATime">[EventATime]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TimeZoneA">[EventATimezone]</InArgument>
+          <InArgument x:TypeArguments="s:DateTime" x:Key="EventBTime">[EventBTime]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TimeZoneB">[EventBTimezone]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="timeDiffString">[EventsTimeDiff]</OutArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[EventsTimeDiff]" />
+    </Sequence>
+  </Sequence>
+</Activity>
